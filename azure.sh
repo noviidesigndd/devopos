@@ -273,7 +273,7 @@ for TARGET in "${TARGET_LOCATIONS[@]}"; do
       echo "  Account Name : ${ACC_NAME}"
       echo "  URL          : ${URL}"
       echo "  Key          : ${KEY}"
-      echo "${URL}|${KEY}"
+      echo "https://${ACC_NAME}.openai.azure.com|${KEY}"
       
       # Note any models that failed to deploy
       if [ -n "${FAILED_MODELS[$TARGET]}" ]; then
